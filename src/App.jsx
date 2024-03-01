@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 // Component import
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
+import BlogsComp from "./components/Blogs/BlogsComp.jsx";
 import BrandsLogo from "./components/BrandsLogo/BrandsLogo.jsx";
+import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
 import Services from "./components/Services/Services";
 import Testimonial from "./components/Testimonial/Testimonial";
-import BlogsComp from "./components/Blogs/BlogsComp.jsx";
-import Footer from "./components/Footer/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
+    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden duration-500">
       <Navbar />
       <Hero />
       <BrandsLogo />

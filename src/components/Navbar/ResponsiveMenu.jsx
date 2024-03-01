@@ -1,7 +1,6 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-
-import { MenuLinks } from "./Navbar";
+import { MenuLinks } from "../../utils/MenuLinks";
 
 const ResponsiveMenu = ({ showMenu }) => {
   console.log("showMenu", showMenu);

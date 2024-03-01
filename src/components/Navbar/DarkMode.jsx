@@ -1,5 +1,5 @@
 import React from "react";
-import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
+import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 
 const DarkMode = () => {
   const [theme, setTheme] = React.useState(
@@ -22,9 +22,9 @@ const DarkMode = () => {
   return (
     <>
       {theme === "dark" ? (
-        <BiSolidSun onClick={() => setTheme("light")} className="text-2xl" />
+        <BiSolidSun onClick={() => setTheme("light")} className="text-2xl cursor-pointer" />
       ) : (
-        <BiSolidMoon onClick={() => setTheme("dark")} className="text-2xl" />
+        <BiSolidMoon onClick={() => setTheme("dark")} className="text-2xl cursor-pointer" />
       )}
     </>
   );

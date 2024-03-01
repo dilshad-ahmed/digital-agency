@@ -3,8 +3,8 @@ import yellowCar from "../../assets/website/team.png";
 
 const Hero = () => {
   return (
-    <div className="dark:bg-gray-950 dark:text-white duration-300 ">
-      <div className="container min-h-[620px] flex mt-10 sm:mt-0">
+    <div className="dark:bg-gray-950 dark:text-white">
+      <div className="container min-h-[620px] flex mt-0 sm:mt-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
           {/* Image section */}
           <div data-aos="zoom-in" className="order-1 sm:order-2 relative">
