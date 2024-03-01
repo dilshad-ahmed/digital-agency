@@ -1,26 +1,10 @@
 import React, { useState } from "react";
-import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
-import ResponsiveMenu from "./ResponsiveMenu";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import Logo from "../../assets/website/Vector.svg";
+import { MenuLinks } from "../../utils/MenuLinks";
 import DarkMode from "./DarkMode";
+import ResponsiveMenu from "./ResponsiveMenu";
 
-export const MenuLinks = [
-  {
-    id: 1,
-    name: "About",
-    link: "/#about",
-  },
-  {
-    id: 2,
-    name: "Services",
-    link: "/#services",
-  },
-  {
-    id: 3,
-    name: "Projects",
-    link: "/#projects",
-  },
-];
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -29,8 +13,7 @@ const Navbar = () => {
   };
   return (
     <div
-      className="relative z-10 w-full dark:bg-black dark:text-white duration-300
-    "
+      className="relative z-10 w-full dark:bg-black dark:text-white"
     >
       <div className="container py-3 md:py-2">
         <div className="flex justify-between items-center">
@@ -38,7 +21,7 @@ const Navbar = () => {
           <a
             target="_blank"
             href="https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ?sub_confirmation=1"
-            className="flex items-center gap-3"
+            className="flex items-center gap-3" rel="noreferrer"
           >
             <img src={Logo} alt="" className="w-5" />
             <span className="text-2xl sm:text-3xl font-semibold">
